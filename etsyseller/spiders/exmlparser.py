@@ -79,13 +79,12 @@ class ExmlparserSpider(scrapy.Spider):
         # # # # *************** Log in ********************************
         
         try:
-            self.driver.find_element_by_id('join_neu_email_field').send_keys('sales@americanpersonalizedproducts.com')
-            self.driver.find_element_by_id("join_neu_password_field").send_keys('328Sawmill')
+            self.driver.find_element_by_id('join_neu_email_field').send_keys('afsd@gadg.com')
+            self.driver.find_element_by_id("join_neu_password_field").send_keys('agegge')
             self.driver.find_element_by_xpath('.//*[contains(@class, "checkbox")]').click()
             self.driver.find_element_by_name('submit_attempt').click()
             
         except Exception as e:
-            print("PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP")
             self.driver.find_element_by_id('username-existing').send_keys('sales@americanpersonalizedproducts.com')
             self.driver.find_element_by_id("password-existing").send_keys('328Sawmill')
             self.driver.find_element_by_xpath('.//*[contains(@class, "checkbox")]').click()
